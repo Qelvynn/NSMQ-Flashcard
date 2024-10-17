@@ -1,0 +1,38 @@
+{
+  "name": "nsmq-flashcard-trainer",
+  "version": "1.0.0",
+  "description": "A flashcard trainer for NSMQ preparation",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-class-properties": "^7.25.7",
+    "@babel/plugin-transform-numeric-separator": "^7.25.8",
+    "@babel/plugin-transform-private-methods": "^7.25.7",
+    "ajv": "^8.17.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}

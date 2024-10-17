@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple gradient */
+  min-height: 100vh;
+}
+
+.container {
+  width: 90vw;
+  max-width: 62.5em;
+  position: relative;
+  margin: auto;
+}
+
+/* Centered Titles with Padding */
+.center-content {
+  text-align: center;
+  padding: 5em 0;
+}
+
+.center-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff; /* White text */
+}
+
+.center-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff; /* White text */
+}
+
+/* Add Flashcard Card that starts halfway down the screen */
+.add-flashcard-card {
+  background-color: #ffffff;
+  box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+  padding: 2em 1.5em;
+  border-radius: 0.6em;
+  text-align: center;
+  margin-top: 10vh; /* Starts 10% down the screen */
+}
+
+.add-flashcard-card h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4a148c; /* Complementary purple hue */
+  margin-bottom: 1.5em;
+}
+
+.add-flashcard-con {
+  display: flex;
+  justify-content: center;
+  padding: 1.2em 1em;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-flashcard-con button {
+  font-size: 1em;
+  background-color: #7e57c2; /* Soft purple button */
+  color: #ffffff;
+  padding: 0.8em 1.2em;
+  font-weight: 500;
+  border-radius: 0.4em;
+}
+
+.add-flashcard-con button:hover {
+  background-color: #5e35b1; /* Darker purple on hover */
+}
+
+#card-con {
+  margin-top: 1em;
+}
+
+.card-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 1.5em; /* Space between cards */
+  padding: 1em 0; /* Padding around the grid */
+}
+
+.card {
+  background-color: #f1f1f1; /* Light grey background */
+  border-radius: 1em; /* Rounded corners */
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+  text-align: center; /* Center text */
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.1em); /* Slight hover effect */
+}
+
+.question-div {
+  font-size: 1.2em; /* Adjust font size as needed */
+  font-weight: 500; /* Adjust font weight for question */
+  color: #333; /* Dark text for question */
+  margin: 0; /* Remove margin for better alignment */
+}
+
+.answer-div {
+  font-weight: 400; /* Adjust font weight for answer */
+  color: #555; /* Grey text for answer */
+  margin-top: 0.5em; /* Margin above answer */
+}
+
+.show-hide-btn {
+  color: #007bff; /* Link color */
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.buttons-con {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.question-container {
+  width: 90vw;
+  max-width: 34em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em 2em;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+}
+
+.question-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  color: #4a148c; /* Complementary purple hue */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.wrapper .fa-xmark {
+  cursor: pointer;
+  color: #d32f2f; /* Red color */
+}
+
+.input {
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+  width: 100%;
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+}
+
+#error {
+  color: #d32f2f; /* Red color for errors */
+}
