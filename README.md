@@ -115,7 +115,6 @@ nsmq-flashcard-trainer/
 │   └── index.html         # Main HTML file
 │
 ├── src/                   # Source code for the app
-│   ├── components/        # React components (Flashcard, AddFlashcardForm, etc.)
 │   ├── styles/            # CSS and styling files
 │   ├── App.js             # Main application component
 │   └── index.js           # Entry point for React
