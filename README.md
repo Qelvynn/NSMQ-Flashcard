@@ -24,8 +24,7 @@ The NSMQ Flashcard Trainer is designed to assist students in their preparation f
 - **View Flashcards**: Browse through created flashcards, with the ability to reveal answers.
 - **Edit Flashcards**: Modify existing flashcards to update the content.
 - **Delete Flashcards**: Remove flashcards that are no longer needed.
-- **Flashcard Categories**: Group flashcards by subject areas such as Physics, Chemistry, Math, etc.
-- **Spaced Repetition**: Study the flashcards and test yourself to aid retention.
+
 
 ---
 
