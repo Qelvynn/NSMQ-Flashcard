@@ -37,3 +37,44 @@ To run the NSMQ Flashcard Trainer on your local machine, follow these steps:
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - npm (Comes with Node.js)
+
+### Steps
+
+1. **Clone the Repository**:
+    
+    ```
+    git clone https://github.com/yourusername/nsmq-flashcard-trainer.git
+    
+    ```
+    
+2. **Navigate to the Project Directory**:
+
+    
+    ```jsx
+    cd nsmq-flashcard-trainer
+    ```
+    
+3. **Install Dependencies**:
+Use npm to install the required dependencies:
+
+    
+    ```jsx
+    npm install
+    ```
+    
+
+1. **Run the Development Server**:
+Start the React development server:
+
+    
+    ```jsx
+    npm start
+    ```
+    
+
+1. **Open the Application**:
+Once the server is running, open your browser and navigate to:
+
+```jsx
+http://localhost:3000
+```
