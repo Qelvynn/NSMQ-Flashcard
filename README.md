@@ -4,13 +4,13 @@
 
 ## Table of Contents
 
-1. [Description](https://www.notion.so/GIT-e2e40472af264e8e9c0b151ab6927cf1?pvs=21)
-2. [Features](https://www.notion.so/GIT-e2e40472af264e8e9c0b151ab6927cf1?pvs=21)
-3. [Installation](https://www.notion.so/GIT-e2e40472af264e8e9c0b151ab6927cf1?pvs=21)
-4. [Usage](https://www.notion.so/GIT-e2e40472af264e8e9c0b151ab6927cf1?pvs=21)
-5. [Project Structure](https://www.notion.so/GIT-e2e40472af264e8e9c0b151ab6927cf1?pvs=21)
-6. [Contributing](https://www.notion.so/GIT-e2e40472af264e8e9c0b151ab6927cf1?pvs=21)
-7. [License](https://www.notion.so/GIT-e2e40472af264e8e9c0b151ab6927cf1?pvs=21)
+1. [Description]
+2. [Features]
+3. [Installation]
+4. [Usage]
+5. [Project Structure]
+6. [Contributing]
+7. [License]
 
 ---
 
