@@ -8,19 +8,29 @@ const App = () => {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
   const [editIndex, setEditIndex] = useState(null);
+  const [error, setError] = useState(''); // State to manage error message
 
   const handleAddFlashcard = () => {
+    // Clear previous error message
+    setError('');
+
+    // Validate inputs
+    if (!question || !answer) {
+      setError('Input fields cannot be empty!'); // Set error message if inputs are empty
+      return; // Stop execution if validation fails
+    }
+
     if (editIndex !== null) {
       const updatedFlashcards = flashcards.map((card, index) => {
         if (index === editIndex) {
-          return { question, answer };
+          return { question, answer, showAnswer: false }; // Reset showAnswer on edit
         }
         return card;
       });
       setFlashcards(updatedFlashcards);
       setEditIndex(null);
     } else {
-      setFlashcards([...flashcards, { question, answer }]);
+      setFlashcards([...flashcards, { question, answer, showAnswer: false }]);
     }
     setQuestion('');
     setAnswer('');
@@ -37,6 +47,12 @@ const App = () => {
   const handleDeleteFlashcard = (index) => {
     const updatedFlashcards = flashcards.filter((_, i) => i !== index);
     setFlashcards(updatedFlashcards);
+  };
+
+  const toggleShowAnswer = (index) => {
+    const newCards = [...flashcards];
+    newCards[index].showAnswer = !newCards[index].showAnswer;
+    setFlashcards(newCards);
   };
 
   return (
@@ -62,13 +78,10 @@ const App = () => {
               key={index}
               question={card.question}
               answer={card.answer}
-              onToggle={() => {
-                const newCards = [...flashcards];
-                newCards[index].showAnswer = !newCards[index].showAnswer;
-                setFlashcards(newCards);
-              }}
+              onToggle={() => toggleShowAnswer(index)}
               onEdit={() => handleEditFlashcard(index)}
               onDelete={() => handleDeleteFlashcard(index)}
+              showAnswer={card.showAnswer} // Pass showAnswer to Flashcard
             />
           ))}
         </div>
@@ -79,7 +92,7 @@ const App = () => {
           <h2>{editIndex !== null ? 'Edit Flashcard' : 'Add Flashcard'}</h2>
           <div className="wrapper">
             <div className="error-con">
-              <span className="hide" id="error">Input fields cannot be empty!</span>
+              {error && <span className="error">{error}</span>} {/* Display error message */}
             </div>
             <i className="fa-solid fa-xmark" onClick={() => setShowAddFlashcard(false)}></i>
           </div>
