@@ -171,6 +171,24 @@ button {
   box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
 }
 
+.show-hide-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 10px 0; /* Spacing around the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #2575fc; /* Button background color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.show-hide-btn:hover {
+  background-color: #6a11cb; /* Darker shade on hover */
+}
+
 #error {
   color: #d32f2f; /* Red color for errors */
 }
