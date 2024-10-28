@@ -1,9 +1,12 @@
 {
+  "homepage": "https://qelvynn.github.io/NSMQ-Flashcard",
   "name": "nsmq-flashcard-trainer",
   "version": "1.0.0",
   "description": "A flashcard trainer for NSMQ preparation",
   "main": "src/index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,6 +36,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "gh-pages": "^6.2.0",
+    "prettier": "^3.3.3"
   }
 }
