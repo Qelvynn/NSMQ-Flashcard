@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/NSMQ-Flashcard/static/css/main.7d47b274.css",
-    "main.js": "/NSMQ-Flashcard/static/js/main.dc8fc812.js",
+    "main.js": "/NSMQ-Flashcard/static/js/main.734baa35.js",
     "index.html": "/NSMQ-Flashcard/index.html",
     "main.7d47b274.css.map": "/NSMQ-Flashcard/static/css/main.7d47b274.css.map",
-    "main.dc8fc812.js.map": "/NSMQ-Flashcard/static/js/main.dc8fc812.js.map"
+    "main.734baa35.js.map": "/NSMQ-Flashcard/static/js/main.734baa35.js.map"
   },
   "entrypoints": [
     "static/css/main.7d47b274.css",
-    "static/js/main.dc8fc812.js"
+    "static/js/main.734baa35.js"
   ]
 }
